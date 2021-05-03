@@ -27,7 +27,7 @@ var config = {
 	httpsPrivateKey: "", 	// HTTPS private key path, only require when useHttps is true
 	httpsCertificate: "", 	// HTTPS Certificate path, only require when useHttps is true
 
-	language: "nl",
+	language: "en",
 	locale: "en-NL",
 	logLevel: ["INFO", "LOG", "WARN", "ERROR"], // Add "DEBUG" for even more logging
 	timeFormat: 24,
@@ -54,7 +54,19 @@ var config = {
         timezone: 'Europe/Amsterdam'
       }
 		},
-		{
+    {
+      module: 'MMM-SystemStats',
+      position: 'top_right', // This can be any of the regions.
+      classes: 'xsmall dimmed',
+      header: 'System Stats',
+      config: {
+        updateInterval: 10000, // every 10 seconds
+        align: 'right', // align labels
+        units: 'metric', // default, metric, imperial
+        label: 'textAndIcon',
+      },
+    },
+    {
 			module: "calendar",
 			header: "Calendar",
 			position: "top_right",

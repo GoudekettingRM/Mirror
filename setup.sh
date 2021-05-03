@@ -14,4 +14,6 @@ git clone https://github.com/htilburgs/MMM-MyDutchWeather.git ; cd MMM-MyDutchWe
 
 git clone https://github.com/GoudekettingRM/MMM-Nightscout.git ; cd MMM-Nightscout ; npm i ; cd .. ;
 
+https://github.com/BenRoe/MMM-SystemStats.git ; cd MMM-SystemStats ; npm i ; cd .. ;
+
 cd .. ;

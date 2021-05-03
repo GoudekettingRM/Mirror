@@ -10,4 +10,4 @@ Then run
 sudo chmod +x ./MirrorSetup/setup.sh
 ```
 
-Lastly, run `./MirrorSetup/setup.sh` and the setup should start.
+Lastly, run `source ./MirrorSetup/setup.sh` and the setup should start.

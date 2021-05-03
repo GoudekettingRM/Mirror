@@ -12,4 +12,4 @@ git clone https://github.com/MarcLandis/MMM-FlipClock.git ; cd MMM-FlipClock ; n
 
 git clone https://github.com/htilburgs/MMM-MyDutchWeather.git ; cd MMM-MyDutchWeather ; npm i ; cd .. ;
 
-git clone https://github.com/bureus/MMM-Nightscout.git ; cd MMM-Nightscout ; npm i ; cd .. ;
+git clone https://github.com/GoudekettingRM/MMM-Nightscout.git ; cd MMM-Nightscout ; npm i ; cd .. ;

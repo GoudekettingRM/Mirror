@@ -1,58 +1,100 @@
 #!/bin/bash
 
-git clone https://github.com/MichMich/MagicMirror ;
+echo "" ; echo "" ; echo "" ;
 
-cd ./MagicMirror ; npm i ;
+if [ ! -d "MagicMirror" ]; then
+  echo "------------------->>" ;
+  echo "------------------->>" ;
+  echo "------------------->> INSTALLING MagicMirror" ;
+  git clone https://github.com/MichMich/MagicMirror ;
+  cd ./MagicMirror ;
+  echo "------------------->> INSTALLING DEPENDENCIES FOR MagicMirror" ;
+  npm i ;
+else
+  echo "------------------->>" ;
+  echo "------------------->>" ;
+  echo "------------------->> UPDATING MagicMirror" ;
+  cd ./MagicMirror ;
+  git pull ;
+  echo "------------------->> UPDATING DEPENDENCIES FOR MagicMirror" ;
+  npm i ;
+fi
+echo "" ; echo "" ; echo "" ;
 
+echo "------------------->>" ;
+echo "------------------->>" ;
+echo "------------------->> Updating config/config.js" ;
+echo "------------------->>" ;
+echo "------------------->>" ;
 cp ../MirrorSetup/config.js ./config/config.js ;
-
 cd ./modules ;
 
+
+
+echo "" ; echo "" ; echo "" ;
+echo "------------------->> MMM-FlipClock" ;
+
 if [ ! -d "MMM-FlipClock" ]; then
-  echo "" ; echo "" ; echo "------------------->> MMM-FlipClock NOT INSTALLED" ;
-  echo "" ; echo "" ; echo "------------------->> INSTALLING MMM-FlipClock" ;
+  echo "------------------->> MMM-FlipClock NOT INSTALLED" ;
+  echo "------------------->> INSTALLING MMM-FlipClock" ;
   git clone https://github.com/MarcLandis/MMM-FlipClock.git ;
   cd MMM-FlipClock ;
-  echo "" ; echo "" ; echo "------------------->> INSTALLING DEPENDENCIES FOR MMM-FlipClock" ;
+  echo "------------------->> INSTALLING DEPENDENCIES FOR MMM-FlipClock" ;
   npm i ;
-  echo "" ; echo "" ; echo "------------------->> MMM-FlipClock INSTALLED" ;
+  echo "------------------->> MMM-FlipClock INSTALLED" ;
   cd .. ;
 else
-  echo "" ; echo "" ; echo "------------------->> MMM-FlipClock PRESENT" ;
+  echo "------------------->> MMM-FlipClock PRESENT" ;
   cd MMM-FlipClock ;
-  echo "" ; echo "" ; echo "------------------->> UPDATING MMM-FlipClock" ;
+  echo "------------------->> UPDATING MMM-FlipClock" ;
   git pull ;
-  echo "" ; echo "" ; echo "------------------->> UPDATING DEPENDENCIES FOR MMM-FlipClock" ;
+  echo "------------------->> UPDATING DEPENDENCIES FOR MMM-FlipClock" ;
   npm i ;
   cd .. ;
 fi
 
-echo "" ; echo "" ; echo "" ;
+echo "------------------->>" ;
+echo "------------------->>" ;
 echo "------------------->> Done with MMM-FlipClock" ;
+echo "------------------->>" ;
+echo "------------------->>" ;
 echo "" ; echo "" ; echo "" ;
+
+# --------------------------------------------------------------------------------------------------------------#
+
+echo "" ; echo "" ; echo "" ;
+echo "------------------->> MMM-MyDutchWeather" ;
 
 if [ ! -d "MMM-MyDutchWeather" ]; then
-  echo "" ; echo "" ; echo "------------------->> MMM-MyDutchWeather NOT INSTALLED" ;
-  echo "" ; echo "" ; echo "------------------->> INSTALLING MMM-MyDutchWeather" ;
+  echo "------------------->> MMM-MyDutchWeather NOT INSTALLED" ;
+  echo "------------------->> INSTALLING MMM-MyDutchWeather" ;
   git clone https://github.com/htilburgs/MMM-MyDutchWeather.git ;
   cd MMM-MyDutchWeather ;
-  echo "" ; echo "" ; echo "------------------->> INSTALLING DEPENDENCIES FOR MMM-MyDutchWeather" ;
+  echo "------------------->> INSTALLING DEPENDENCIES FOR MMM-MyDutchWeather" ;
   npm i ;
-  echo "" ; echo "" ; echo "------------------->> MMM-MyDutchWeather INSTALLED" ;
+  echo "------------------->> MMM-MyDutchWeather INSTALLED" ;
   cd .. ;
 else
-  echo "" ; echo "" ; echo "------------------->> MMM-MyDutchWeather PRESENT" ;
+  echo "------------------->> MMM-MyDutchWeather PRESENT" ;
   cd MMM-MyDutchWeather ;
-  echo "" ; echo "" ; echo "------------------->> UPDATING MMM-MyDutchWeather" ;
+  echo "------------------->> UPDATING MMM-MyDutchWeather" ;
   git pull ;
-  echo "" ; echo "" ; echo "------------------->> UPDATING DEPENDENCIES FOR MMM-MyDutchWeather" ;
+  echo "------------------->> UPDATING DEPENDENCIES FOR MMM-MyDutchWeather" ;
   npm i ;
   cd .. ;
 fi
 
-echo "" ; echo "" ; echo "" ;
+echo "------------------->>" ;
+echo "------------------->>" ;
 echo "------------------->> Done with MMM-MyDutchWeather" ;
+echo "------------------->>" ;
+echo "------------------->>" ;
 echo "" ; echo "" ; echo "" ;
+
+# --------------------------------------------------------------------------------------------------------------#
+
+echo "" ; echo "" ; echo "" ;
+echo "------------------->> MMM-Nightscout" ;
 
 if [ ! -d "MMM-Nightscout" ]; then
   echo "" ; echo "" ; echo "------------------->> MMM-Nightscout NOT INSTALLED" ;
@@ -73,9 +115,17 @@ else
   cd .. ;
 fi
 
-echo "" ; echo "" ; echo "" ;
+echo "------------------->>" ;
+echo "------------------->>" ;
 echo "------------------->> Done with MMM-Nightscout" ;
+echo "------------------->>" ;
+echo "------------------->>" ;
 echo "" ; echo "" ; echo "" ;
+
+# --------------------------------------------------------------------------------------------------------------#
+
+echo "" ; echo "" ; echo "" ;
+echo "------------------->> MMM-SystemStats" ;
 
 if [ ! -d "MMM-SystemStats" ]; then
   echo "" ; echo "" ; echo "------------------->> MMM-SystemStats NOT INSTALLED" ;
@@ -96,8 +146,14 @@ else
   cd .. ;
 fi
 
-echo "" ; echo "" ; echo "" ;
+echo "------------------->>" ;
+echo "------------------->>" ;
 echo "------------------->> Done with MMM-SystemStats" ;
+echo "------------------->>" ;
+echo "------------------->>" ;
 echo "" ; echo "" ; echo "" ;
+
+
+echo "------------------->> DONE INSTALLING, HAVE FUN :D" ;
 
 cd .. ;

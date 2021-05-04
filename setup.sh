@@ -7,6 +7,7 @@ if [ ! -d "MagicMirror" ]; then
   echo "------------------->>" ;
   echo "------------------->> INSTALLING MagicMirror" ;
   git clone https://github.com/MichMich/MagicMirror ;
+  git config pull.rebase false ;
   cd ./MagicMirror ;
   echo "------------------->> INSTALLING DEPENDENCIES FOR MagicMirror" ;
   npm i ;
@@ -38,6 +39,7 @@ if [ ! -d "MMM-FlipClock" ]; then
   echo "------------------->> MMM-FlipClock NOT INSTALLED" ;
   echo "------------------->> INSTALLING MMM-FlipClock" ;
   git clone https://github.com/MarcLandis/MMM-FlipClock.git ;
+  git config pull.rebase false ;
   cd MMM-FlipClock ;
   echo "------------------->> INSTALLING DEPENDENCIES FOR MMM-FlipClock" ;
   npm i ;
@@ -69,6 +71,7 @@ if [ ! -d "MMM-MyDutchWeather" ]; then
   echo "------------------->> MMM-MyDutchWeather NOT INSTALLED" ;
   echo "------------------->> INSTALLING MMM-MyDutchWeather" ;
   git clone https://github.com/htilburgs/MMM-MyDutchWeather.git ;
+  git config pull.rebase false ;
   cd MMM-MyDutchWeather ;
   echo "------------------->> INSTALLING DEPENDENCIES FOR MMM-MyDutchWeather" ;
   npm i ;
@@ -100,6 +103,7 @@ if [ ! -d "MMM-Nightscout" ]; then
   echo "" ; echo "" ; echo "------------------->> MMM-Nightscout NOT INSTALLED" ;
   echo "" ; echo "" ; echo "------------------->> INSTALLING MMM-Nightscout" ;
   git clone https://github.com/GoudekettingRM/MMM-Nightscout.git ;
+  git config pull.rebase false ;
   cd MMM-Nightscout ;
   echo "" ; echo "" ; echo "------------------->> INSTALLING DEPENDENCIES FOR MMM-Nightscout" ;
   npm i ;
@@ -131,6 +135,7 @@ if [ ! -d "MMM-SystemStats" ]; then
   echo "" ; echo "" ; echo "------------------->> MMM-SystemStats NOT INSTALLED" ;
   echo "" ; echo "" ; echo "------------------->> INSTALLING MMM-SystemStats" ;
   git clone https://github.com/BenRoe/MMM-SystemStats.git ;
+  git config pull.rebase false ;
   cd MMM-SystemStats ;
   echo "" ; echo "" ; echo "------------------->> INSTALLING DEPENDENCIES FOR MMM-SystemStats" ;
   npm i ;

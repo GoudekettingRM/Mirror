@@ -118,7 +118,7 @@ var config = {
             url: "http://feeds.nos.nl/nosjournaal"
           }
         ],
-        showDescription: false,
+        showDescription: true,
         updateInterval: 20000
       }
     },

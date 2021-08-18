@@ -118,7 +118,8 @@ var config = {
             url: "http://feeds.nos.nl/nosjournaal"
           }
         ],
-        showDescription: false
+        showDescription: false,
+        updateInterval: 20000
       }
     },
     // {

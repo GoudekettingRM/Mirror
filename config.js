@@ -92,6 +92,8 @@ var config = {
         latitude: "48.171050",
         longitude: "16.367300",
         iconset: "5c",
+        maxHourliesToShow: 6,
+        showDailyForecast: false,
         concise: false,
         forecastLayout: "table"
       }

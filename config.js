@@ -51,7 +51,7 @@ var config = {
 			position: "top_left",
       config: {
         timeFormat: 24,
-        timezone: 'Europe/Amsterdam'
+        timezone: 'Europe/Vienna'
       }
 		},
     {
@@ -86,8 +86,8 @@ var config = {
       position: 'bottom_right',
       header: 'Weather',
       config: {
-        latitude: 52.09083,
-        longitude: 5.12222,
+        latitude: 48.171077,
+        longitude: 16.3672986,
         apiKey: '49ef3282c9',
         showIcons: true,
         showExtra: false,

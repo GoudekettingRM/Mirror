@@ -75,8 +75,8 @@ if [ ! -d "MMM-OneCallWeather" ]; then
   git clone https://github.com/Captsi/MMM-OneCallWeather.git;
   cd MMM-OneCallWeather ;
   git config pull.rebase false ;
-  echo "------------------->> INSTALLING DEPENDENCIES FOR MMM-OneCallWeather" ;
-  npm i ;
+  # echo "------------------->> INSTALLING DEPENDENCIES FOR MMM-OneCallWeather" ;
+  # npm i ;
   echo "------------------->> MMM-OneCallWeather INSTALLED" ;
   cd .. ;
 else

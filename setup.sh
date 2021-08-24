@@ -1,7 +1,7 @@
 #!/bin/bash
 
-echo "" ; echo "" ; echo "" ;
-
+echo "------------------->>" ;
+echo "------------------->>" ;
 if [ ! -d "MagicMirror" ]; then
   echo "------------------->>" ;
   echo "------------------->>" ;
@@ -20,8 +20,8 @@ else
   echo "------------------->> UPDATING DEPENDENCIES FOR MagicMirror" ;
   npm i ;
 fi
-echo "" ; echo "" ; echo "" ;
 
+echo "------------------->>" ;
 echo "------------------->>" ;
 echo "------------------->>" ;
 echo "------------------->> Updating config/config.js" ;
@@ -30,9 +30,9 @@ echo "------------------->>" ;
 cp ../MirrorSetup/config.js ./config/config.js ;
 cd ./modules ;
 
-
-
-echo "" ; echo "" ; echo "" ;
+echo "------------------->>" ;
+echo "------------------->>" ;
+echo "------------------->>" ;
 echo "------------------->> MMM-FlipClock" ;
 
 if [ ! -d "MMM-FlipClock" ]; then
@@ -60,61 +60,65 @@ echo "------------------->>" ;
 echo "------------------->> Done with MMM-FlipClock" ;
 echo "------------------->>" ;
 echo "------------------->>" ;
-echo "" ; echo "" ; echo "" ;
+echo "------------------->>" ;
 
 # --------------------------------------------------------------------------------------------------------------#
 
-echo "" ; echo "" ; echo "" ;
-echo "------------------->> MMM-MyDutchWeather" ;
+echo "------------------->>" ;
+echo "------------------->>" ;
+echo "------------------->>" ;
+echo "------------------->> MMM-OneCallWeather" ;
 
-if [ ! -d "MMM-MyDutchWeather" ]; then
-  echo "------------------->> MMM-MyDutchWeather NOT INSTALLED" ;
-  echo "------------------->> INSTALLING MMM-MyDutchWeather" ;
-  git clone https://github.com/htilburgs/MMM-MyDutchWeather.git ;
-  cd MMM-MyDutchWeather ;
+if [ ! -d "MMM-OneCallWeather" ]; then
+  echo "------------------->> MMM-OneCallWeather NOT INSTALLED" ;
+  echo "------------------->> INSTALLING MMM-OneCallWeather" ;
+  git clone https://github.com/Captsi/MMM-OneCallWeather.git;
+  cd MMM-OneCallWeather ;
   git config pull.rebase false ;
-  echo "------------------->> INSTALLING DEPENDENCIES FOR MMM-MyDutchWeather" ;
+  echo "------------------->> INSTALLING DEPENDENCIES FOR MMM-OneCallWeather" ;
   npm i ;
-  echo "------------------->> MMM-MyDutchWeather INSTALLED" ;
+  echo "------------------->> MMM-OneCallWeather INSTALLED" ;
   cd .. ;
 else
-  echo "------------------->> MMM-MyDutchWeather PRESENT" ;
-  cd MMM-MyDutchWeather ;
-  echo "------------------->> UPDATING MMM-MyDutchWeather" ;
+  echo "------------------->> MMM-OneCallWeather PRESENT" ;
+  cd MMM-OneCallWeather ;
+  echo "------------------->> UPDATING MMM-OneCallWeather" ;
   git pull ;
-  echo "------------------->> UPDATING DEPENDENCIES FOR MMM-MyDutchWeather" ;
+  echo "------------------->> UPDATING DEPENDENCIES FOR MMM-OneCallWeather" ;
   npm i ;
   cd .. ;
 fi
 
 echo "------------------->>" ;
 echo "------------------->>" ;
-echo "------------------->> Done with MMM-MyDutchWeather" ;
+echo "------------------->> Done with MMM-OneCallWeather" ;
 echo "------------------->>" ;
 echo "------------------->>" ;
-echo "" ; echo "" ; echo "" ;
+echo "------------------->>" ;
 
 # --------------------------------------------------------------------------------------------------------------#
 
-echo "" ; echo "" ; echo "" ;
+echo "------------------->>" ;
+echo "------------------->>" ;
+echo "------------------->>" ;
 echo "------------------->> MMM-Nightscout" ;
 
 if [ ! -d "MMM-Nightscout" ]; then
-  echo "" ; echo "" ; echo "------------------->> MMM-Nightscout NOT INSTALLED" ;
-  echo "" ; echo "" ; echo "------------------->> INSTALLING MMM-Nightscout" ;
+  echo "------------------->> MMM-Nightscout NOT INSTALLED" ;
+  echo "------------------->> INSTALLING MMM-Nightscout" ;
   git clone https://github.com/GoudekettingRM/MMM-Nightscout.git ;
   cd MMM-Nightscout ;
   git config pull.rebase false ;
-  echo "" ; echo "" ; echo "------------------->> INSTALLING DEPENDENCIES FOR MMM-Nightscout" ;
+  echo "------------------->> INSTALLING DEPENDENCIES FOR MMM-Nightscout" ;
   npm i ;
-  echo "" ; echo "" ; echo "------------------->> MMM-Nightscout INSTALLED" ;
+  echo "------------------->> MMM-Nightscout INSTALLED" ;
   cd .. ;
 else
-  echo "" ; echo "" ; echo "------------------->> MMM-Nightscout PRESENT" ;
+  echo "------------------->> MMM-Nightscout PRESENT" ;
   cd MMM-Nightscout ;
-  echo "" ; echo "" ; echo "------------------->> UPDATING MMM-Nightscout" ;
+  echo "------------------->> UPDATING MMM-Nightscout" ;
   git pull ;
-  echo "" ; echo "" ; echo "------------------->> UPDATING DEPENDENCIES FOR MMM-Nightscout" ;
+  echo "------------------->> UPDATING DEPENDENCIES FOR MMM-Nightscout" ;
   npm i ;
   cd .. ;
 fi
@@ -124,29 +128,31 @@ echo "------------------->>" ;
 echo "------------------->> Done with MMM-Nightscout" ;
 echo "------------------->>" ;
 echo "------------------->>" ;
-echo "" ; echo "" ; echo "" ;
+echo "------------------->>" ;
 
 # --------------------------------------------------------------------------------------------------------------#
 
-echo "" ; echo "" ; echo "" ;
+echo "------------------->>" ;
+echo "------------------->>" ;
+echo "------------------->>" ;
 echo "------------------->> MMM-SystemStats" ;
 
 if [ ! -d "MMM-SystemStats" ]; then
-  echo "" ; echo "" ; echo "------------------->> MMM-SystemStats NOT INSTALLED" ;
-  echo "" ; echo "" ; echo "------------------->> INSTALLING MMM-SystemStats" ;
+  echo "------------------->> MMM-SystemStats NOT INSTALLED" ;
+  echo "------------------->> INSTALLING MMM-SystemStats" ;
   git clone https://github.com/BenRoe/MMM-SystemStats.git ;
   cd MMM-SystemStats ;
   git config pull.rebase false ;
-  echo "" ; echo "" ; echo "------------------->> INSTALLING DEPENDENCIES FOR MMM-SystemStats" ;
+  echo "------------------->> INSTALLING DEPENDENCIES FOR MMM-SystemStats" ;
   npm i ;
-  echo "" ; echo "" ; echo "------------------->> MMM-SystemStats INSTALLED" ;
+  echo "------------------->> MMM-SystemStats INSTALLED" ;
   cd .. ;
 else
-  echo "" ; echo "" ; echo "------------------->> MMM-SystemStats PRESENT" ;
+  echo "------------------->> MMM-SystemStats PRESENT" ;
   cd MMM-SystemStats ;
-  echo "" ; echo "" ; echo "------------------->> UPDATING MMM-SystemStats" ;
+  echo "------------------->> UPDATING MMM-SystemStats" ;
   git pull ;
-  echo "" ; echo "" ; echo "------------------->> UPDATING DEPENDENCIES FOR MMM-SystemStats" ;
+  echo "------------------->> UPDATING DEPENDENCIES FOR MMM-SystemStats" ;
   npm i ;
   cd .. ;
 fi
@@ -156,9 +162,7 @@ echo "------------------->>" ;
 echo "------------------->> Done with MMM-SystemStats" ;
 echo "------------------->>" ;
 echo "------------------->>" ;
-echo "" ; echo "" ; echo "" ;
-
-
+echo "------------------->>" ;
 echo "------------------->> DONE INSTALLING, HAVE FUN :D" ;
 
 cd .. ;

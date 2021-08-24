@@ -82,18 +82,27 @@ var config = {
 			}
 		},
     {
-      module: 'MMM-MyDutchWeather',
-      position: 'bottom_right',
-      header: 'Weather',
+      module: "MMM-OneCallWeather",
+      position: "bottom_right",
       config: {
-        latitude: 48.171077,
-        longitude: 16.3672986,
-        apiKey: '49ef3282c9',
-        showIcons: true,
-        showExtra: false,
-        maxWidth: "500px",
+        latitude: "48.171050", //Longitude from https://www.latlong.net/
+        longitude: "16.367300", //Longitude from https://www.latlong.net/
+        apikey: "37cf96e6d8b3c74a04e06cdc4533e0e2" //openweathermap.org API key.
       }
     },
+    // {
+    //   module: 'MMM-MyDutchWeather',
+    //   position: 'bottom_right',
+    //   header: 'Weather',
+    //   config: {
+    //     latitude: 52.09083,
+    //     longitude: 5.12222,
+    //     apiKey: '49ef3282c9',
+    //     showIcons: true,
+    //     showExtra: false,
+    //     maxWidth: "500px",
+    //   }
+    // },
     {
       module: "MMM-Nightscout",
         position: "bottom_left",

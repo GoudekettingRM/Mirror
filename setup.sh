@@ -67,31 +67,31 @@ echo "------------------->>" ;
 echo "------------------->>" ;
 echo "------------------->>" ;
 echo "------------------->>" ;
-echo "------------------->> MMM-OneCallWeather" ;
+echo "------------------->> MMM-OpenWeatherMapForecast" ;
 
-if [ ! -d "MMM-OneCallWeather" ]; then
-  echo "------------------->> MMM-OneCallWeather NOT INSTALLED" ;
-  echo "------------------->> INSTALLING MMM-OneCallWeather" ;
-  git clone https://github.com/Captsi/MMM-OneCallWeather.git;
-  cd MMM-OneCallWeather ;
+if [ ! -d "MMM-OpenWeatherMapForecast" ]; then
+  echo "------------------->> MMM-OpenWeatherMapForecast NOT INSTALLED" ;
+  echo "------------------->> INSTALLING MMM-OpenWeatherMapForecast" ;
+  git clone https://github.com/MarcLandis/MMM-OpenWeatherMapForecast.git;
+  cd MMM-OpenWeatherMapForecast ;
   git config pull.rebase false ;
-  # echo "------------------->> INSTALLING DEPENDENCIES FOR MMM-OneCallWeather" ;
-  # npm i ;
-  echo "------------------->> MMM-OneCallWeather INSTALLED" ;
+  echo "------------------->> INSTALLING DEPENDENCIES FOR MMM-OpenWeatherMapForecast" ;
+  npm i ;
+  echo "------------------->> MMM-OpenWeatherMapForecast INSTALLED" ;
   cd .. ;
 else
-  echo "------------------->> MMM-OneCallWeather PRESENT" ;
-  cd MMM-OneCallWeather ;
-  echo "------------------->> UPDATING MMM-OneCallWeather" ;
+  echo "------------------->> MMM-OpenWeatherMapForecast PRESENT" ;
+  cd MMM-OpenWeatherMapForecast ;
+  echo "------------------->> UPDATING MMM-OpenWeatherMapForecast" ;
   git pull ;
-  echo "------------------->> UPDATING DEPENDENCIES FOR MMM-OneCallWeather" ;
+  echo "------------------->> UPDATING DEPENDENCIES FOR MMM-OpenWeatherMapForecast" ;
   npm i ;
   cd .. ;
 fi
 
 echo "------------------->>" ;
 echo "------------------->>" ;
-echo "------------------->> Done with MMM-OneCallWeather" ;
+echo "------------------->> Done with MMM-OpenWeatherMapForecast" ;
 echo "------------------->>" ;
 echo "------------------->>" ;
 echo "------------------->>" ;

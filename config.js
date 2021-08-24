@@ -82,12 +82,18 @@ var config = {
 			}
 		},
     {
-      module: "MMM-OneCallWeather",
+      module: "MMM-OpenWeatherMapForecast",
+      header: "Weather",
       position: "bottom_right",
+      classes: "default everyone",
+      disabled: false,
       config: {
-        latitude: "48.171050", //Longitude from https://www.latlong.net/
-        longitude: "16.367300", //Longitude from https://www.latlong.net/
-        apikey: "37cf96e6d8b3c74a04e06cdc4533e0e2" //openweathermap.org API key.
+        apikey: "37cf96e6d8b3c74a04e06cdc4533e0e2",
+        latitude: "48.171050",
+        longitude: "16.367300",
+        iconset: "5c",
+        concise: false,
+        forecastLayout: "table"
       }
     },
     // {

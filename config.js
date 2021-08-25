@@ -88,7 +88,7 @@ var config = {
       classes: "default everyone",
       disabled: false,
       config: {
-        apikey: "37cf96e6d8b3c74a04e06cdc4533e0e2",
+        apikey: "secret key here",
         latitude: "48.171050",
         longitude: "16.367300",
         iconset: "5c",
@@ -123,7 +123,7 @@ var config = {
           chartHours: 4, //Optional: number of hours that chart tracks. Default is 4.
           renderChart: true,  //Optional: set to false if you dont want to get a chart. Default is true.
           extendedHeader: false, //Option: set to false if you want to hide server title and last glucose value.
-          apiSecret: '7ca27d96aae31c62b5bf2088fad92ea76789c170',
+          apiSecret: 'secret key here',
       }
     },
     {
